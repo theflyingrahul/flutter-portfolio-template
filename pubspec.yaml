@@ -46,7 +46,8 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  build_runner:
+  build_runner: ^2.4.9
+  build_web_compilers:
   freezed: ^2.5.2
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -74,8 +75,6 @@ flutter:
     - assets/images/projects/otp_package/
     - assets/images/projects/roam/
     - assets/images/projects/outfitr/
-    - assets/screenshots/
-  #    - assets/screenshots/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

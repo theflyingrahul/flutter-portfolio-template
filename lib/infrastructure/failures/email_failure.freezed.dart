@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'email_failure.dart';
 
@@ -10,23 +12,7 @@ part of 'email_failure.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$EmailFailureTearOff {
-  const _$EmailFailureTearOff();
-
-  ServerError serverError() {
-    return const ServerError();
-  }
-
-  NetworkError networkError() {
-    return const NetworkError();
-  }
-}
-
-/// @nodoc
-const $EmailFailure = _$EmailFailureTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$EmailFailure {
@@ -34,6 +20,12 @@ mixin _$EmailFailure {
   TResult when<TResult extends Object?>({
     required TResult Function() serverError,
     required TResult Function() networkError,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? serverError,
+    TResult? Function()? networkError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -50,6 +42,12 @@ mixin _$EmailFailure {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(ServerError value)? serverError,
+    TResult? Function(NetworkError value)? networkError,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(ServerError value)? serverError,
     TResult Function(NetworkError value)? networkError,
@@ -62,40 +60,40 @@ mixin _$EmailFailure {
 abstract class $EmailFailureCopyWith<$Res> {
   factory $EmailFailureCopyWith(
           EmailFailure value, $Res Function(EmailFailure) then) =
-      _$EmailFailureCopyWithImpl<$Res>;
+      _$EmailFailureCopyWithImpl<$Res, EmailFailure>;
 }
 
 /// @nodoc
-class _$EmailFailureCopyWithImpl<$Res> implements $EmailFailureCopyWith<$Res> {
+class _$EmailFailureCopyWithImpl<$Res, $Val extends EmailFailure>
+    implements $EmailFailureCopyWith<$Res> {
   _$EmailFailureCopyWithImpl(this._value, this._then);
 
-  final EmailFailure _value;
   // ignore: unused_field
-  final $Res Function(EmailFailure) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class $ServerErrorCopyWith<$Res> {
-  factory $ServerErrorCopyWith(
-          ServerError value, $Res Function(ServerError) then) =
-      _$ServerErrorCopyWithImpl<$Res>;
+abstract class _$$ServerErrorImplCopyWith<$Res> {
+  factory _$$ServerErrorImplCopyWith(
+          _$ServerErrorImpl value, $Res Function(_$ServerErrorImpl) then) =
+      __$$ServerErrorImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$ServerErrorCopyWithImpl<$Res> extends _$EmailFailureCopyWithImpl<$Res>
-    implements $ServerErrorCopyWith<$Res> {
-  _$ServerErrorCopyWithImpl(
-      ServerError _value, $Res Function(ServerError) _then)
-      : super(_value, (v) => _then(v as ServerError));
-
-  @override
-  ServerError get _value => super._value as ServerError;
+class __$$ServerErrorImplCopyWithImpl<$Res>
+    extends _$EmailFailureCopyWithImpl<$Res, _$ServerErrorImpl>
+    implements _$$ServerErrorImplCopyWith<$Res> {
+  __$$ServerErrorImplCopyWithImpl(
+      _$ServerErrorImpl _value, $Res Function(_$ServerErrorImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$ServerError implements ServerError {
-  const _$ServerError();
+class _$ServerErrorImpl implements ServerError {
+  const _$ServerErrorImpl();
 
   @override
   String toString() {
@@ -103,8 +101,9 @@ class _$ServerError implements ServerError {
   }
 
   @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) || (other is ServerError);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$ServerErrorImpl);
   }
 
   @override
@@ -117,6 +116,15 @@ class _$ServerError implements ServerError {
     required TResult Function() networkError,
   }) {
     return serverError();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? serverError,
+    TResult? Function()? networkError,
+  }) {
+    return serverError?.call();
   }
 
   @override
@@ -143,6 +151,15 @@ class _$ServerError implements ServerError {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(ServerError value)? serverError,
+    TResult? Function(NetworkError value)? networkError,
+  }) {
+    return serverError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(ServerError value)? serverError,
     TResult Function(NetworkError value)? networkError,
@@ -156,31 +173,29 @@ class _$ServerError implements ServerError {
 }
 
 abstract class ServerError implements EmailFailure {
-  const factory ServerError() = _$ServerError;
+  const factory ServerError() = _$ServerErrorImpl;
 }
 
 /// @nodoc
-abstract class $NetworkErrorCopyWith<$Res> {
-  factory $NetworkErrorCopyWith(
-          NetworkError value, $Res Function(NetworkError) then) =
-      _$NetworkErrorCopyWithImpl<$Res>;
+abstract class _$$NetworkErrorImplCopyWith<$Res> {
+  factory _$$NetworkErrorImplCopyWith(
+          _$NetworkErrorImpl value, $Res Function(_$NetworkErrorImpl) then) =
+      __$$NetworkErrorImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$NetworkErrorCopyWithImpl<$Res> extends _$EmailFailureCopyWithImpl<$Res>
-    implements $NetworkErrorCopyWith<$Res> {
-  _$NetworkErrorCopyWithImpl(
-      NetworkError _value, $Res Function(NetworkError) _then)
-      : super(_value, (v) => _then(v as NetworkError));
-
-  @override
-  NetworkError get _value => super._value as NetworkError;
+class __$$NetworkErrorImplCopyWithImpl<$Res>
+    extends _$EmailFailureCopyWithImpl<$Res, _$NetworkErrorImpl>
+    implements _$$NetworkErrorImplCopyWith<$Res> {
+  __$$NetworkErrorImplCopyWithImpl(
+      _$NetworkErrorImpl _value, $Res Function(_$NetworkErrorImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$NetworkError implements NetworkError {
-  const _$NetworkError();
+class _$NetworkErrorImpl implements NetworkError {
+  const _$NetworkErrorImpl();
 
   @override
   String toString() {
@@ -188,8 +203,9 @@ class _$NetworkError implements NetworkError {
   }
 
   @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) || (other is NetworkError);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$NetworkErrorImpl);
   }
 
   @override
@@ -202,6 +218,15 @@ class _$NetworkError implements NetworkError {
     required TResult Function() networkError,
   }) {
     return networkError();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? serverError,
+    TResult? Function()? networkError,
+  }) {
+    return networkError?.call();
   }
 
   @override
@@ -228,6 +253,15 @@ class _$NetworkError implements NetworkError {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(ServerError value)? serverError,
+    TResult? Function(NetworkError value)? networkError,
+  }) {
+    return networkError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(ServerError value)? serverError,
     TResult Function(NetworkError value)? networkError,
@@ -241,5 +275,5 @@ class _$NetworkError implements NetworkError {
 }
 
 abstract class NetworkError implements EmailFailure {
-  const factory NetworkError() = _$NetworkError;
+  const factory NetworkError() = _$NetworkErrorImpl;
 }

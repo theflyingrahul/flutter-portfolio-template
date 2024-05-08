@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'email_bloc.dart';
 
@@ -10,28 +12,7 @@ part of 'email_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$EmailEventTearOff {
-  const _$EmailEventTearOff();
-
-  SendEmail sendEmail(
-      {required String name,
-      required String email,
-      required String subject,
-      required String message}) {
-    return SendEmail(
-      name: name,
-      email: email,
-      subject: subject,
-      message: message,
-    );
-  }
-}
-
-/// @nodoc
-const $EmailEvent = _$EmailEventTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$EmailEvent {
@@ -39,11 +20,17 @@ mixin _$EmailEvent {
   String get email => throw _privateConstructorUsedError;
   String get subject => throw _privateConstructorUsedError;
   String get message => throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(
             String name, String email, String subject, String message)
+        sendEmail,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(
+            String name, String email, String subject, String message)?
         sendEmail,
   }) =>
       throw _privateConstructorUsedError;
@@ -57,6 +44,11 @@ mixin _$EmailEvent {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(SendEmail value) sendEmail,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(SendEmail value)? sendEmail,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -75,84 +67,91 @@ mixin _$EmailEvent {
 abstract class $EmailEventCopyWith<$Res> {
   factory $EmailEventCopyWith(
           EmailEvent value, $Res Function(EmailEvent) then) =
-      _$EmailEventCopyWithImpl<$Res>;
+      _$EmailEventCopyWithImpl<$Res, EmailEvent>;
+  @useResult
   $Res call({String name, String email, String subject, String message});
 }
 
 /// @nodoc
-class _$EmailEventCopyWithImpl<$Res> implements $EmailEventCopyWith<$Res> {
+class _$EmailEventCopyWithImpl<$Res, $Val extends EmailEvent>
+    implements $EmailEventCopyWith<$Res> {
   _$EmailEventCopyWithImpl(this._value, this._then);
 
-  final EmailEvent _value;
   // ignore: unused_field
-  final $Res Function(EmailEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
-    Object? email = freezed,
-    Object? subject = freezed,
-    Object? message = freezed,
+    Object? name = null,
+    Object? email = null,
+    Object? subject = null,
+    Object? message = null,
   }) {
     return _then(_value.copyWith(
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      email: email == freezed
+      email: null == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String,
-      subject: subject == freezed
+      subject: null == subject
           ? _value.subject
           : subject // ignore: cast_nullable_to_non_nullable
               as String,
-      message: message == freezed
+      message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class $SendEmailCopyWith<$Res> implements $EmailEventCopyWith<$Res> {
-  factory $SendEmailCopyWith(SendEmail value, $Res Function(SendEmail) then) =
-      _$SendEmailCopyWithImpl<$Res>;
+abstract class _$$SendEmailImplCopyWith<$Res>
+    implements $EmailEventCopyWith<$Res> {
+  factory _$$SendEmailImplCopyWith(
+          _$SendEmailImpl value, $Res Function(_$SendEmailImpl) then) =
+      __$$SendEmailImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String name, String email, String subject, String message});
 }
 
 /// @nodoc
-class _$SendEmailCopyWithImpl<$Res> extends _$EmailEventCopyWithImpl<$Res>
-    implements $SendEmailCopyWith<$Res> {
-  _$SendEmailCopyWithImpl(SendEmail _value, $Res Function(SendEmail) _then)
-      : super(_value, (v) => _then(v as SendEmail));
+class __$$SendEmailImplCopyWithImpl<$Res>
+    extends _$EmailEventCopyWithImpl<$Res, _$SendEmailImpl>
+    implements _$$SendEmailImplCopyWith<$Res> {
+  __$$SendEmailImplCopyWithImpl(
+      _$SendEmailImpl _value, $Res Function(_$SendEmailImpl) _then)
+      : super(_value, _then);
 
-  @override
-  SendEmail get _value => super._value as SendEmail;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
-    Object? email = freezed,
-    Object? subject = freezed,
-    Object? message = freezed,
+    Object? name = null,
+    Object? email = null,
+    Object? subject = null,
+    Object? message = null,
   }) {
-    return _then(SendEmail(
-      name: name == freezed
+    return _then(_$SendEmailImpl(
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      email: email == freezed
+      email: null == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String,
-      subject: subject == freezed
+      subject: null == subject
           ? _value.subject
           : subject // ignore: cast_nullable_to_non_nullable
               as String,
-      message: message == freezed
+      message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
               as String,
@@ -162,8 +161,8 @@ class _$SendEmailCopyWithImpl<$Res> extends _$EmailEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$SendEmail implements SendEmail {
-  const _$SendEmail(
+class _$SendEmailImpl implements SendEmail {
+  const _$SendEmailImpl(
       {required this.name,
       required this.email,
       required this.subject,
@@ -184,32 +183,24 @@ class _$SendEmail implements SendEmail {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other is SendEmail &&
-            (identical(other.name, name) ||
-                const DeepCollectionEquality().equals(other.name, name)) &&
-            (identical(other.email, email) ||
-                const DeepCollectionEquality().equals(other.email, email)) &&
-            (identical(other.subject, subject) ||
-                const DeepCollectionEquality()
-                    .equals(other.subject, subject)) &&
-            (identical(other.message, message) ||
-                const DeepCollectionEquality().equals(other.message, message)));
+        (other.runtimeType == runtimeType &&
+            other is _$SendEmailImpl &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.email, email) || other.email == email) &&
+            (identical(other.subject, subject) || other.subject == subject) &&
+            (identical(other.message, message) || other.message == message));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(name) ^
-      const DeepCollectionEquality().hash(email) ^
-      const DeepCollectionEquality().hash(subject) ^
-      const DeepCollectionEquality().hash(message);
+  int get hashCode => Object.hash(runtimeType, name, email, subject, message);
 
   @JsonKey(ignore: true)
   @override
-  $SendEmailCopyWith<SendEmail> get copyWith =>
-      _$SendEmailCopyWithImpl<SendEmail>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$SendEmailImplCopyWith<_$SendEmailImpl> get copyWith =>
+      __$$SendEmailImplCopyWithImpl<_$SendEmailImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -219,6 +210,16 @@ class _$SendEmail implements SendEmail {
         sendEmail,
   }) {
     return sendEmail(name, email, subject, message);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(
+            String name, String email, String subject, String message)?
+        sendEmail,
+  }) {
+    return sendEmail?.call(name, email, subject, message);
   }
 
   @override
@@ -244,6 +245,14 @@ class _$SendEmail implements SendEmail {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(SendEmail value)? sendEmail,
+  }) {
+    return sendEmail?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(SendEmail value)? sendEmail,
     required TResult orElse(),
@@ -257,48 +266,24 @@ class _$SendEmail implements SendEmail {
 
 abstract class SendEmail implements EmailEvent {
   const factory SendEmail(
-      {required String name,
-      required String email,
-      required String subject,
-      required String message}) = _$SendEmail;
+      {required final String name,
+      required final String email,
+      required final String subject,
+      required final String message}) = _$SendEmailImpl;
 
   @override
-  String get name => throw _privateConstructorUsedError;
+  String get name;
   @override
-  String get email => throw _privateConstructorUsedError;
+  String get email;
   @override
-  String get subject => throw _privateConstructorUsedError;
+  String get subject;
   @override
-  String get message => throw _privateConstructorUsedError;
+  String get message;
   @override
   @JsonKey(ignore: true)
-  $SendEmailCopyWith<SendEmail> get copyWith =>
+  _$$SendEmailImplCopyWith<_$SendEmailImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$EmailStateTearOff {
-  const _$EmailStateTearOff();
-
-  Initial initial() {
-    return const Initial();
-  }
-
-  SendingEmail sendingEmail() {
-    return const SendingEmail();
-  }
-
-  Failure failure() {
-    return const Failure();
-  }
-
-  EmailSentSuccessFully emailSentSuccessFully() {
-    return const EmailSentSuccessFully();
-  }
-}
-
-/// @nodoc
-const $EmailState = _$EmailStateTearOff();
 
 /// @nodoc
 mixin _$EmailState {
@@ -308,6 +293,14 @@ mixin _$EmailState {
     required TResult Function() sendingEmail,
     required TResult Function() failure,
     required TResult Function() emailSentSuccessFully,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? sendingEmail,
+    TResult? Function()? failure,
+    TResult? Function()? emailSentSuccessFully,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -329,6 +322,14 @@ mixin _$EmailState {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(SendingEmail value)? sendingEmail,
+    TResult? Function(Failure value)? failure,
+    TResult? Function(EmailSentSuccessFully value)? emailSentSuccessFully,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(SendingEmail value)? sendingEmail,
@@ -343,38 +344,40 @@ mixin _$EmailState {
 abstract class $EmailStateCopyWith<$Res> {
   factory $EmailStateCopyWith(
           EmailState value, $Res Function(EmailState) then) =
-      _$EmailStateCopyWithImpl<$Res>;
+      _$EmailStateCopyWithImpl<$Res, EmailState>;
 }
 
 /// @nodoc
-class _$EmailStateCopyWithImpl<$Res> implements $EmailStateCopyWith<$Res> {
+class _$EmailStateCopyWithImpl<$Res, $Val extends EmailState>
+    implements $EmailStateCopyWith<$Res> {
   _$EmailStateCopyWithImpl(this._value, this._then);
 
-  final EmailState _value;
   // ignore: unused_field
-  final $Res Function(EmailState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class $InitialCopyWith<$Res> {
-  factory $InitialCopyWith(Initial value, $Res Function(Initial) then) =
-      _$InitialCopyWithImpl<$Res>;
+abstract class _$$InitialImplCopyWith<$Res> {
+  factory _$$InitialImplCopyWith(
+          _$InitialImpl value, $Res Function(_$InitialImpl) then) =
+      __$$InitialImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$InitialCopyWithImpl<$Res> extends _$EmailStateCopyWithImpl<$Res>
-    implements $InitialCopyWith<$Res> {
-  _$InitialCopyWithImpl(Initial _value, $Res Function(Initial) _then)
-      : super(_value, (v) => _then(v as Initial));
-
-  @override
-  Initial get _value => super._value as Initial;
+class __$$InitialImplCopyWithImpl<$Res>
+    extends _$EmailStateCopyWithImpl<$Res, _$InitialImpl>
+    implements _$$InitialImplCopyWith<$Res> {
+  __$$InitialImplCopyWithImpl(
+      _$InitialImpl _value, $Res Function(_$InitialImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$Initial implements Initial {
-  const _$Initial();
+class _$InitialImpl implements Initial {
+  const _$InitialImpl();
 
   @override
   String toString() {
@@ -382,8 +385,9 @@ class _$Initial implements Initial {
   }
 
   @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Initial);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$InitialImpl);
   }
 
   @override
@@ -398,6 +402,17 @@ class _$Initial implements Initial {
     required TResult Function() emailSentSuccessFully,
   }) {
     return initial();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? sendingEmail,
+    TResult? Function()? failure,
+    TResult? Function()? emailSentSuccessFully,
+  }) {
+    return initial?.call();
   }
 
   @override
@@ -429,6 +444,17 @@ class _$Initial implements Initial {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(SendingEmail value)? sendingEmail,
+    TResult? Function(Failure value)? failure,
+    TResult? Function(EmailSentSuccessFully value)? emailSentSuccessFully,
+  }) {
+    return initial?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(SendingEmail value)? sendingEmail,
@@ -444,31 +470,29 @@ class _$Initial implements Initial {
 }
 
 abstract class Initial implements EmailState {
-  const factory Initial() = _$Initial;
+  const factory Initial() = _$InitialImpl;
 }
 
 /// @nodoc
-abstract class $SendingEmailCopyWith<$Res> {
-  factory $SendingEmailCopyWith(
-          SendingEmail value, $Res Function(SendingEmail) then) =
-      _$SendingEmailCopyWithImpl<$Res>;
+abstract class _$$SendingEmailImplCopyWith<$Res> {
+  factory _$$SendingEmailImplCopyWith(
+          _$SendingEmailImpl value, $Res Function(_$SendingEmailImpl) then) =
+      __$$SendingEmailImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$SendingEmailCopyWithImpl<$Res> extends _$EmailStateCopyWithImpl<$Res>
-    implements $SendingEmailCopyWith<$Res> {
-  _$SendingEmailCopyWithImpl(
-      SendingEmail _value, $Res Function(SendingEmail) _then)
-      : super(_value, (v) => _then(v as SendingEmail));
-
-  @override
-  SendingEmail get _value => super._value as SendingEmail;
+class __$$SendingEmailImplCopyWithImpl<$Res>
+    extends _$EmailStateCopyWithImpl<$Res, _$SendingEmailImpl>
+    implements _$$SendingEmailImplCopyWith<$Res> {
+  __$$SendingEmailImplCopyWithImpl(
+      _$SendingEmailImpl _value, $Res Function(_$SendingEmailImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$SendingEmail implements SendingEmail {
-  const _$SendingEmail();
+class _$SendingEmailImpl implements SendingEmail {
+  const _$SendingEmailImpl();
 
   @override
   String toString() {
@@ -476,8 +500,9 @@ class _$SendingEmail implements SendingEmail {
   }
 
   @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) || (other is SendingEmail);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$SendingEmailImpl);
   }
 
   @override
@@ -492,6 +517,17 @@ class _$SendingEmail implements SendingEmail {
     required TResult Function() emailSentSuccessFully,
   }) {
     return sendingEmail();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? sendingEmail,
+    TResult? Function()? failure,
+    TResult? Function()? emailSentSuccessFully,
+  }) {
+    return sendingEmail?.call();
   }
 
   @override
@@ -523,6 +559,17 @@ class _$SendingEmail implements SendingEmail {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(SendingEmail value)? sendingEmail,
+    TResult? Function(Failure value)? failure,
+    TResult? Function(EmailSentSuccessFully value)? emailSentSuccessFully,
+  }) {
+    return sendingEmail?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(SendingEmail value)? sendingEmail,
@@ -538,29 +585,29 @@ class _$SendingEmail implements SendingEmail {
 }
 
 abstract class SendingEmail implements EmailState {
-  const factory SendingEmail() = _$SendingEmail;
+  const factory SendingEmail() = _$SendingEmailImpl;
 }
 
 /// @nodoc
-abstract class $FailureCopyWith<$Res> {
-  factory $FailureCopyWith(Failure value, $Res Function(Failure) then) =
-      _$FailureCopyWithImpl<$Res>;
+abstract class _$$FailureImplCopyWith<$Res> {
+  factory _$$FailureImplCopyWith(
+          _$FailureImpl value, $Res Function(_$FailureImpl) then) =
+      __$$FailureImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$FailureCopyWithImpl<$Res> extends _$EmailStateCopyWithImpl<$Res>
-    implements $FailureCopyWith<$Res> {
-  _$FailureCopyWithImpl(Failure _value, $Res Function(Failure) _then)
-      : super(_value, (v) => _then(v as Failure));
-
-  @override
-  Failure get _value => super._value as Failure;
+class __$$FailureImplCopyWithImpl<$Res>
+    extends _$EmailStateCopyWithImpl<$Res, _$FailureImpl>
+    implements _$$FailureImplCopyWith<$Res> {
+  __$$FailureImplCopyWithImpl(
+      _$FailureImpl _value, $Res Function(_$FailureImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$Failure implements Failure {
-  const _$Failure();
+class _$FailureImpl implements Failure {
+  const _$FailureImpl();
 
   @override
   String toString() {
@@ -568,8 +615,9 @@ class _$Failure implements Failure {
   }
 
   @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Failure);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$FailureImpl);
   }
 
   @override
@@ -584,6 +632,17 @@ class _$Failure implements Failure {
     required TResult Function() emailSentSuccessFully,
   }) {
     return failure();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? sendingEmail,
+    TResult? Function()? failure,
+    TResult? Function()? emailSentSuccessFully,
+  }) {
+    return failure?.call();
   }
 
   @override
@@ -615,6 +674,17 @@ class _$Failure implements Failure {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(SendingEmail value)? sendingEmail,
+    TResult? Function(Failure value)? failure,
+    TResult? Function(EmailSentSuccessFully value)? emailSentSuccessFully,
+  }) {
+    return failure?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(SendingEmail value)? sendingEmail,
@@ -630,32 +700,30 @@ class _$Failure implements Failure {
 }
 
 abstract class Failure implements EmailState {
-  const factory Failure() = _$Failure;
+  const factory Failure() = _$FailureImpl;
 }
 
 /// @nodoc
-abstract class $EmailSentSuccessFullyCopyWith<$Res> {
-  factory $EmailSentSuccessFullyCopyWith(EmailSentSuccessFully value,
-          $Res Function(EmailSentSuccessFully) then) =
-      _$EmailSentSuccessFullyCopyWithImpl<$Res>;
+abstract class _$$EmailSentSuccessFullyImplCopyWith<$Res> {
+  factory _$$EmailSentSuccessFullyImplCopyWith(
+          _$EmailSentSuccessFullyImpl value,
+          $Res Function(_$EmailSentSuccessFullyImpl) then) =
+      __$$EmailSentSuccessFullyImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$EmailSentSuccessFullyCopyWithImpl<$Res>
-    extends _$EmailStateCopyWithImpl<$Res>
-    implements $EmailSentSuccessFullyCopyWith<$Res> {
-  _$EmailSentSuccessFullyCopyWithImpl(
-      EmailSentSuccessFully _value, $Res Function(EmailSentSuccessFully) _then)
-      : super(_value, (v) => _then(v as EmailSentSuccessFully));
-
-  @override
-  EmailSentSuccessFully get _value => super._value as EmailSentSuccessFully;
+class __$$EmailSentSuccessFullyImplCopyWithImpl<$Res>
+    extends _$EmailStateCopyWithImpl<$Res, _$EmailSentSuccessFullyImpl>
+    implements _$$EmailSentSuccessFullyImplCopyWith<$Res> {
+  __$$EmailSentSuccessFullyImplCopyWithImpl(_$EmailSentSuccessFullyImpl _value,
+      $Res Function(_$EmailSentSuccessFullyImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$EmailSentSuccessFully implements EmailSentSuccessFully {
-  const _$EmailSentSuccessFully();
+class _$EmailSentSuccessFullyImpl implements EmailSentSuccessFully {
+  const _$EmailSentSuccessFullyImpl();
 
   @override
   String toString() {
@@ -663,8 +731,10 @@ class _$EmailSentSuccessFully implements EmailSentSuccessFully {
   }
 
   @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) || (other is EmailSentSuccessFully);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$EmailSentSuccessFullyImpl);
   }
 
   @override
@@ -679,6 +749,17 @@ class _$EmailSentSuccessFully implements EmailSentSuccessFully {
     required TResult Function() emailSentSuccessFully,
   }) {
     return emailSentSuccessFully();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? sendingEmail,
+    TResult? Function()? failure,
+    TResult? Function()? emailSentSuccessFully,
+  }) {
+    return emailSentSuccessFully?.call();
   }
 
   @override
@@ -710,6 +791,17 @@ class _$EmailSentSuccessFully implements EmailSentSuccessFully {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(SendingEmail value)? sendingEmail,
+    TResult? Function(Failure value)? failure,
+    TResult? Function(EmailSentSuccessFully value)? emailSentSuccessFully,
+  }) {
+    return emailSentSuccessFully?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(SendingEmail value)? sendingEmail,
@@ -725,5 +817,5 @@ class _$EmailSentSuccessFully implements EmailSentSuccessFully {
 }
 
 abstract class EmailSentSuccessFully implements EmailState {
-  const factory EmailSentSuccessFully() = _$EmailSentSuccessFully;
+  const factory EmailSentSuccessFully() = _$EmailSentSuccessFullyImpl;
 }
