@@ -16,7 +16,7 @@ class AppTheme {
       colorScheme: colorScheme,
       textTheme: _textTheme,
       iconTheme: IconThemeData(color: AppColors.white),
-      canvasColor: colorScheme.background,
+      canvasColor: colorScheme.surface,
       appBarTheme: AppBarTheme(
         color: AppColors.primaryColor,
       ),
@@ -25,7 +25,7 @@ class AppTheme {
         selectionColor: AppColors.textSelectionColor,
         selectionHandleColor: AppColors.primaryColor,
       ),
-      scaffoldBackgroundColor: colorScheme.background,
+      scaffoldBackgroundColor: colorScheme.surface,
       highlightColor: Colors.transparent,
 
       // accentColor: colorScheme.primary,
@@ -40,10 +40,7 @@ class AppTheme {
     // primaryVariant: AppColors.primaryColor,
     secondary: AppColors.secondaryColor,
     secondaryContainer: AppColors.black,
-    // secondaryVariant: AppColors.black,
-    background: AppColors.primaryColor,
     surface: AppColors.primaryColor,
-    onBackground: Colors.white,
     error: _lightFillColor,
     onError: _lightFillColor,
     onPrimary: _lightFillColor,
